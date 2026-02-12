@@ -5,7 +5,7 @@ fun main() {
     val name: String = "John Thor"
     val score: Int = 80
 
-    //Concatenation gaya lama
+    //Concatenation
     println("Nama: $name, Nilai: $score")
     //control flow when expression
     val grade = when (score) {
@@ -16,4 +16,6 @@ fun main() {
     }
 
     println ("Grade kamu: $grade")
+    println("Staus: ${calculatestatus(score)}")
 }
+fun calculatestatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"
