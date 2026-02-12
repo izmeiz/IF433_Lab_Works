@@ -4,11 +4,12 @@ fun main() {
     val gameTitle  = "Clair Obscur: Expedition 33"
     val price = 600000
 
+    val userNote: String? = null
     //Hitung total harga
     val discount = calculateDiscount(price)
     val finalPrice = price - discount
 
-    printReceipt(title = gameTitle, finalPrice = finalPrice)
+    printReceipt(title = gameTitle, finalPrice = finalPrice, note = userNote)
 
 }
 //Function implement discount
@@ -18,8 +19,9 @@ fun calculateDiscount(price: Int): Int =
 
 
 //Function Cetak Struk
-fun printReceipt(title: String, finalPrice: Int) {
+fun printReceipt(title: String, finalPrice: Int, note : String?) {
     println("===STRUK PEMBELIAN ===")
     println("Judul Game: $title")
     println("Harga Akhir : Rp $finalPrice")
+    println("Catatan     : ${note ?: "Tidak ada catatan"}")
 }
