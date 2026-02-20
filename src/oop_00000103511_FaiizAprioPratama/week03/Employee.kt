@@ -20,9 +20,4 @@ private var performanceRating: Int = 3
         println("Kinerja $name" +
                 " meningkat! Rating: $performanceRating")
     }
-
-    fun printStatus(){
-        println("Karyawan: $name, Rating: $performanceRating")
-    }
-
 }
