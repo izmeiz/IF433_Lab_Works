@@ -13,5 +13,15 @@ fun main(){
 
     for (payment in daftarPembayaran) {
         payment.processPayment(75000.0)
+
+        if (payment is EWallet) {
+            println(">> Saldo EWallet Kurang.")
+            println(">> Melakukan Top-Up otomatis .....")
+
+            payment.topUp(50000.0)
+
+            println(">> Mencoba proses pembayran kembali...")
+            payment.processPayment(75000.0)
+        }
     }
 }
