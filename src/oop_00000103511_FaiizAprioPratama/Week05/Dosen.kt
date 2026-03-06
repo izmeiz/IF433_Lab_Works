@@ -1,6 +1,6 @@
 package oop_00000103511_FaiizAprioPratama.Week05
 
-class Dosen (nama: String, val nidn : String) : oop_00000103511_FaiizAprioPratama.Pegawai(nama){
+class Dosen (nama: String, val nidn : String) : Pegawai(nama){
     override fun bekerja() {
         println("[$nama] sedang menyiapkan materi perkuliahan dan merevisi RPKPS.")
     }
