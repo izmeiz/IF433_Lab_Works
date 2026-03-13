@@ -19,4 +19,17 @@ class SmartHomeHub {
         }
         println("--- Protokol Selesai ---")
     }
+
+    fun activateSecurityMode(){
+        println("\n--- Menjalankan Security mode ---")
+        for (device in devices) {
+            if (device is Recordable) {
+                device.startRecord()
+            }
+            if  (device is SmartSpeaker){
+                device.PlayMusic("Rose Wire")
+            }
+        }
+        println("--- Security Mode Aktif ---\n")
+    }
 }
