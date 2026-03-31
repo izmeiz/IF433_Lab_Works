@@ -22,5 +22,18 @@ fun main(){
     println("- Rarity: ${starterWeapon.item.rarity}")
     println("- Durability: ${starterWeapon.durability}")
 
+    println("\n=== TEST IMMUTABILITY & EVENT SIMULATION ===")
+    val upgradedItem = starterWeapon.item.copy(damage = 25)
+
+    println("Senjata setelah di-upgrade di Blacksmith:")
+    println("- Nama: ${upgradedItem.name}")
+    println("- Damage: ${upgradedItem.damage}")
+
+    println("\n--- Eksekusi Event Berurutan ---")
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDrooped(upgradedItem)) // Memasukkan item hasil copy
+    processEvent(BattleState.GameOver("Terkena jebakan racun"))
+
 
 }
