@@ -8,4 +8,8 @@ fun main(){
     println("\n=== TEST COMPANION OBJECT ===")
     val client = NetworkClient.createClient()
     client.connect()
+
+    println("\n=== TEST GAME MANAGER (SINGLETON) ===")
+    GameManager.startGame()
+    GameManager.startGame()
 }
