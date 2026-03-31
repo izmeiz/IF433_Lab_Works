@@ -9,7 +9,7 @@ fun main(){
     val client = NetworkClient.createClient()
     client.connect()
 
-    println("\n=== TEST GAME MANAGER (SINGLETON) ===")
+    println("\n=== TEST GAME MANGER (SINGLETON) ===")
     GameManager.startGame()
     GameManager.startGame()
 }
