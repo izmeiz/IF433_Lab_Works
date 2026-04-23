@@ -23,5 +23,5 @@ fun main() {
             println("WARNING - Data Korup Dilewati: ${e.message} pada item $raw")
         }
         println("--------------------------------------------------")
-    }
+    } //jalan
 }
