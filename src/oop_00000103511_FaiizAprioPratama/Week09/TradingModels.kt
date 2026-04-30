@@ -1,6 +1,6 @@
 package oop_00000103511_FaiizAprioPratama.Week09
 
-data class Tradelog(
+data class TradeLog(
     val pair: String,
     val position: String,
     val leverage: Int,
