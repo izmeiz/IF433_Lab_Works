@@ -30,4 +30,6 @@ fun main(){
     worstPerformersString.forEach { println(it) }
     println("\n KOIN YANG DITRADINGKAN (UNIQUE PAIRS)")
     println(uniquePairs)
+
+    //YEE JALAN
 }
