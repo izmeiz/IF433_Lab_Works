@@ -9,6 +9,6 @@ fun main(){
         TradeLog(pair = "ETHUSDT", position = "LONG", leverage = 25, roe = 8.4, status = "CLOSED"),
         TradeLog(pair = "BTCUSDT", position = "LONG", leverage = 50, roe = -12.0, status = "OPEN")
     )
-
+//Cetak Data
     println("Berhasil memuat ${tradeHistory.size} log perdagangan.")
 }
