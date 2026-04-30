@@ -11,6 +11,8 @@ fun main(){
     )
 
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
+    val winningTrades = closedTrades.filter { it.roe > 0 }
 
-    println("Berhasil memuat ${tradeHistory.size} log perdagangan.")
+    println("--- Data Perdagangan Selesai (CLOSED) ---")
+    closedTrades.forEach { println("${it.pair} | ${it.position} | ROE: ${it.roe}%") }
 }
