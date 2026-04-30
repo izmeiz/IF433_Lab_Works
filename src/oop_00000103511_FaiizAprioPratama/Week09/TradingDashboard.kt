@@ -23,6 +23,6 @@ fun main(){
         .map { it.pair }
         .toSet()
 
-    println("--- Data Perdagangan Selesai (CLOSED) ---")
-    closedTrades.forEach { println("${it.pair} | ${it.position} | ROE: ${it.roe}%") }
+    println("=== CRYPTO TRADING DASHBOARD ===")
+    topPerformersString.forEach { println(it) }
 }
