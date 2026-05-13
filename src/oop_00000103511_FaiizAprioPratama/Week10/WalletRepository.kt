@@ -21,3 +21,4 @@ fun <T : NamedItem> WalletRepository<T>.findByName(query: String): List<T> {
         it.name.contains(query, ignoreCase = true)
     }
 }
+
