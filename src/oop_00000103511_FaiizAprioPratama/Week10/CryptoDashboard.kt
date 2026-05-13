@@ -25,4 +25,6 @@ fun main() {
     txRepo.getAll().forEach { tx ->
         println("- ID: ${tx.id} | Amount: ${tx.amount}")
     }
+
+    // Test jalan
 }
