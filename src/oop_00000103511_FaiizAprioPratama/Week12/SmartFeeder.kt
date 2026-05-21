@@ -33,5 +33,16 @@ fun main() {
         // Langkah 8: Jadwal Makan 1: Cleanup (Finally)
         println("Siklus pengecekan dispenser pagi selesai.")
     }
+
+    println("=== JADWAL MAKAN 2 (SORE) ===")
+    runCatching {
+        dispenseKibble(
+            requestedGram = 30,
+            availableGram = 1000,
+            isJammed = false
+        )
+    }
 }
+
+
 
